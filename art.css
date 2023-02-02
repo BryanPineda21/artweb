@@ -1,0 +1,144 @@
+.text{
+    color:black;
+    padding-top:10px;
+      font-family: sans-serif;
+      font-size: 40px;
+      text-align: center;
+      margin-left: 50%;
+      transform: translateX(-200%);
+      opacity: 0;
+      animation: slide-in-anim 1.5s ease-out forwards;
+  }
+  .text2{
+    color:black;
+    padding-top:15px;
+      font-family: sans-serif;
+      font-size: 40px;
+      text-align: center;
+      margin-left: 50%;
+      transform: translateX(-200%);
+      opacity: 0;
+      animation: slide-in-anim 1.5s ease-out forwards;
+  }
+  
+  @keyframes slide-in-anim {
+      20% {
+          opacity: 0;
+      }
+      60% {
+          transform: translateX(-45%);
+      }
+      75% {
+          transform: translateX(-52%);
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(-50%);
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  .container-arts{
+    padding-top:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+   flex-flow:wrap; 
+  }
+  .arts2{
+     display:flex;
+    flex-direction:row;
+    justify-content:center;
+   flex-flow:wrap; 
+  }
+  .container-arts2{
+    padding-top:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+     flex-flow:wrap;
+  }
+  
+  .container-arts3{
+    padding-top:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+     flex-flow:wrap;
+  }
+
+  .box1{ 
+    width:325px;
+    height:225px;
+    box-shadow: 10px 5px 5px grey;
+    transition: width 2s, height 2s, transform 2s;
+  }
+  
+  .box1:hover{ 
+    width:400px;
+    height:255px;
+    box-shadow: 10px 5px 5px pink;
+    transition: transform 2s;
+      transform: translateY(-15px);
+    transform: rotate(360deg);
+  }
+  
+  .box2{ 
+    box-shadow: 10px 5px 5px grey;
+    
+  }
+  
+  .box2:hover{ 
+    box-shadow: 10px 5px 5px pink;
+    transition: transform 1.5s;
+      transform: translateY(-10px);
+  }
+  
+  
+  .box{ 
+    width:300px;
+    height:200px;
+    border: 3px solid;
+    border-style:outset;
+    border-color: white;
+    box-shadow: 10px 5px 5px grey;
+      transition: width 2s, height 2s, transform 3s;
+    
+  }
+  .box:hover{ 
+    width:350px;
+    height:225px;
+    border:solid 2px white;
+    box-shadow: 4px 2px 2px plum;
+     transition: transform 2s;
+      transform: translateY(-10px);
+    transform: rotate(360deg);
+  }
+  footer{
+    padding-top:10px;
+    display:flex;
+    justify-content:center;
+  color:black;
+    font-weight:bold;
+    font-size:20px;
+    
+  }
+  @media screen and (max-width:1200px){
+    .box.box1{
+      width:20%;
+    }
+  }
+  
+  @media screen and (max-width:600px){
+    .box.box1{
+      display:flex;
+      justify-content:space-around;
+      width:90%;
+      
+    }
+  }

@@ -1,0 +1,156 @@
+body{
+    background-image: url("https://fraenkelgallery.com/wp-content/uploads/2017/11/Art-Vinyl-Install-View-03-1350x900.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.container-main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+
+
+.text{
+    color:white;
+    font-weight: bold;
+    padding-top:10px;
+      font-family: sans-serif;
+      font-size: 40px;
+      text-align: center;
+      margin-left: 50%;
+      transform: translateX(-200%);
+      opacity: 0;
+      animation: slide-in-anim 1.5s ease-out forwards;
+  }
+  
+  @keyframes slide-in-anim {
+    20% {
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-45%);
+    }
+    75% {
+        transform: translateX(-52%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}
+
+
+.audio{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container1{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    border: solid;
+    border-radius: 50px;
+    background-image:url("https://images.discotech.me/artists/None/b6472cc6-b183-4722-bb13-2f5cd037497d.jpg?auto=format%2Ccompress&w=1000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 500px;
+    height: 200px;
+    box-shadow:10px 5px 5px grey;
+}
+.container1:hover{
+    box-shadow:10px 5px 5px purple;
+}
+
+.container2{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    border: solid;
+    border-radius: 50px;
+    background-image:url("https://i.scdn.co/image/ab67616d00001e02f3dcd901b0d6dcb134fc3715");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 500px;
+    height: 200px;
+    box-shadow:10px 5px 5px grey;
+}
+
+.container2:hover{
+    box-shadow:10px 5px 5px blue;
+}
+
+.container3{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    border: solid;
+    border-radius: 50px;
+    background-image:url("https://mixmag.net/assets/uploads/images/_fullX2/ross-from-friends-tread-lead.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 500px;
+    height: 200px;
+    box-shadow:10px 5px 5px grey;
+}
+.container3:hover{
+    box-shadow:10px 5px 5px greenyellow;
+}
+
+
+.container1>h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:50px;
+}
+
+.container3>h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:50px;
+}
+.container2>h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:50px;
+    color: black;
+}
+
+
+h2{
+    font-size: 30px;
+    color: white;
+    padding-top:30px;
+}
+#music{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container1 .container2 .container3 {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container-main{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    }
+    
+    .container1 .container2 .container3 {
+      width: 20%;
+
+    }
+  }
